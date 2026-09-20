@@ -1,6 +1,4 @@
 #include "stdio.h"
-#include "math.h"
-// #define ull unsigned long long
 
 int main(int argc, char const *argv[])
 {
@@ -10,11 +8,14 @@ int main(int argc, char const *argv[])
     unsigned long long x, answer = 0;
     scanf("%llu", &x);
 
-    for (int a = 1; a <= pow(x, 1.0f / 3.0f); a++)
-    {
-        continue;
+    for (long long a = 1; a * a * a <= x; a++) {
+        for(long long b = a; a * b * b <= x; b++) {
+            // int c = (x / (a * b)) - b + 1;
+            answer += (x / (a * b)) - b + 1;
+            // printf("a = %d\tb = %d\tc = %d\n", a, b, c);
+        }
     }
-
+    printf("%llu", answer);
 
     return 0;
 }
