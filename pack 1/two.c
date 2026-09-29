@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     if(freopen("input.txt", "r", stdin) == NULL) {
         printf("Errror open file!\n");
@@ -9,13 +9,13 @@ int main(int argc, char const *argv[])
     freopen("output.txt", "w", stdout);
 
     int a, b, c;
-    scanf("%d", &a); 
-    scanf("%d", &b); 
-    scanf("%d", &c); 
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
 
     if(a <= 0) {
         printf("%d", -1);
-    } 
+    }
     else if (b <= 0) {
         printf("%d", -2);
     }

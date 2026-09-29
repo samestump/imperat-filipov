@@ -1,11 +1,11 @@
 #include "stdio.h"
 
-int main(int argc, char const *argv[])
+int main(void)
 {
 
     if(freopen("input.txt", "r", stdin) == NULL) {
         printf("Error open file\n");
-        return -1;   
+        return -1;
     }
 
     freopen("output.txt", "w", stdout);
@@ -20,8 +20,7 @@ int main(int argc, char const *argv[])
             answer += temp;
         }
     }
-    
+
     printf("%d", answer);
     return 0;
 }
-

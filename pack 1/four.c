@@ -1,9 +1,7 @@
 #include "stdio.h"
-#include "math.h"
 
 int perfect(unsigned int num) {
-    int sq_num = sqrt(num);
-    for (int i = 2; i <= sq_num; i++)
+    for (int i = 2; i * i <= num; i++)
     {
         if(num % i == 0) return 0;
     }
@@ -11,7 +9,7 @@ int perfect(unsigned int num) {
 }
 
 int main(int argc, char const *argv[])
-{   
+{
     freopen("output.txt", "w", stdout);
     if(freopen("input.txt", "r", stdin) == NULL) {
         return -1;

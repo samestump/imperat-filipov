@@ -2,8 +2,11 @@
 input.txt
 output.txt
 main
+<<<<<<< HEAD
 # Python
 *.py
+=======
+>>>>>>> 400b4b7 (Add solution pack two 1-8)
 
 # Prerequisites
 *.d
