@@ -5,7 +5,7 @@ int main(void) {
     freopen("output.txt", "w", stdout);
     if(freopen("input.txt", "r", stdin) == NULL) return -1;
 
-    const int n;
+    int n;
     scanf("%d\n", &n);
     int temp;
 
