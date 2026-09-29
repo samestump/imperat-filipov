@@ -2,6 +2,8 @@
 input.txt
 output.txt
 main
+# Python
+*.py
 
 # Prerequisites
 *.d
