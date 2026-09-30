@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    freopen("output.txt", "w", stdout);
+    if(freopen("output.txt", "w", stdout) == NULL) return -1;
     if(freopen("input.txt", "r", stdin) == NULL) return -1;
 
     int n;
