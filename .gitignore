@@ -1,7 +1,8 @@
-# Files input.txt and output.txt and main
-input.txt
-output.txt
+# Files main
 main
+
+# txt
+*.txt
 
 # Python
 *.py
